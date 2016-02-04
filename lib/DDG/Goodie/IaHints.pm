@@ -13,13 +13,27 @@ zci is_cached => 1;
 # For plain strings it must match the entire query unless explicitly 
 my %iahints = (
     'news' => 'obama news',
+    
     '.*air quality.*' => 'air quality 33434',
     '.*air pollution.*' => 'air pollution 33434',
+    
     '(iphone|ipad|android) apps' => 'productivity apps',
+    
     'gifs' => 'cat gifs',
+    
     'bitcoin rate' => 'bitcoin usd',
+    
     '.*base64.*' => 'base64 encode foo',
-    '(english )?dictionary' => 'define obsequious'
+    
+    '(english )?dictionary' => 'define obsequious',
+    
+    'fedex' => 'Fedex 9241990100130206401644',
+    'fedex.com' => 'Fedex 9241990100130206401644',
+    'fedex tracking' => 'Fedex 9241990100130206401644',
+    
+    'ups' => 'UPS 1Z2807700371226497',
+    'ups.com' => 'UPS 1Z2807700371226497',
+    'ups tracking' => 'UPS 1Z2807700371226497',
 );
 
 # join them into a massive regex that we use for triggers
