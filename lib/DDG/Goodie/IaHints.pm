@@ -34,6 +34,33 @@ my %iahints = (
     'ups' => 'UPS 1Z2807700371226497',
     'ups.com' => 'UPS 1Z2807700371226497',
     'ups tracking' => 'UPS 1Z2807700371226497',
+
+    # News.
+    '.{0,8}news.{0,8}' => 'News about Elon Musk',
+
+    # Products.
+    'amazon.{0,10}' => 'Amazon Ray Bradbury Books',
+
+    # Apps.
+    '(?:apple |ipad |iphone |android |)\bapps\b' => 'Calculator apps',
+
+    # Maps.
+    'maps?' => 'Map of Rome, Italy',
+
+    # Soundcloud.
+    '.{0,8}soundcloud.{0,8}' => 'SoundCloud Skrillex',
+
+    # Stocks.
+    '.*(?:nasdaq|stock prices?|share prices?).*' => 'TWTR stock price',
+
+    # Currency.
+    '(?:convert|calculate|)\s?(?:currency|(?:exchange(?: rate|)))\s?(?:|conversion|covert|converter|calculate|calcuator)' => 'Convert $5 to Euros',
+
+    # GIFs.
+    'gifs?' => 'Lol gifs',
+
+    # People in space.
+    '.*astronauts?.*' => 'People in space',
 );
 
 # join them into a massive regex that we use for triggers
