@@ -9,12 +9,16 @@ zci answer_type => 'ia_hints';
 
 zci is_cached => 1;
 
-# define a regex that matches for each query hint
+# Define a regex that matches for each query hint
+# For plain strings it must match the entire query unless explicitly 
 my %iahints = (
     'news' => 'obama news',
-    'air quality' => 'air quality 33434',
+    '.*air quality.*' => 'air quality 33434',
+    '.*air pollution.*' => 'air pollution 33434',
     '(iphone|ipad|android) apps' => 'productivity apps',
-    'gifs?' => 'cat gifs',
+    'gifs' => 'cat gifs',
+    'bitcoin rate' => 'bitcoin usd',
+    '.*base64.*' => 'base64 encode foo',
     '(english )?dictionary' => 'define obsequious'
 );
 
