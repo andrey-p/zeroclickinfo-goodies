@@ -93,6 +93,8 @@ handle matches => sub {
                 sample_query => $suggestion
             },
 
+            signal => "low",
+
             templates => {
                 group => "text",
                 options => {
